@@ -1,16 +1,3 @@
-/*¹¦ÄÜ£º
-        1.×Ô¶¯É¨Ãè²¢¼ÇÂ¼Ó¢ÎÄ¶ÌÎÄµÄ×ÖÄ¸ºÍÊı×ÖÒÔ¼°¿Õ¸ñµÄÈ¨Öµ
-         £¨1£©ÓÅ»¯ÎªÉ¨ÃèËùÓĞ×Ö·û£¬Ó¢ÎÄ×ÖÄ¸ºÍÊı×Ö£» 
-		2.¼ÆËã²¢¹¹½¨¹ş·òÂüÊ÷
-		3.½«¹ş·òÂüÊ÷ÒÔ¹ãÒå±íµÄĞÎÊ½Êä³ö¡£  
-  ÎÊÌâ£º
-        1.ÆôÓÃÁËÈ«¾Ö±äÁ¿
-		2.Õû¸ö´úÂëÃ»µÃ×¢ÊÍ£¬¿É¶ÁĞÔ²î
-		3.Õû¸öÖÆ×÷¹ı³ÌÊ±¼ä¹ı³¤ 
-		4.Ö»ÄÜ¶ÁÈ¡Êı×Ö¿Õ¸ñºÍÓ¢ÎÄ×ÖÄ¸ (ÒÑÓÅ»¯)
-*/ 
- 
-
 #include"iostream"
 #include"cstdlib"
 #include"cctype"
@@ -167,13 +154,13 @@ Tree** caozuo(char *C)
 
 char* input()
 {
-	cout << "ÇëÊäÈëÓ¢ÎÄ¾ä×Ó£º" << endl;
+	cout << "è¯·è¾“å…¥è‹±æ–‡å¥å­ï¼š" << endl;
 	char *a = new char[1000];
 	gets(a);
 	return a;
 }
 
-void Dfirstroot(Tree *T,Tree* bT)//µİ¹éÏÈ¸ù±éÀú (ĞŞ¸Ä°æ) 
+void Dfirstroot(Tree *T,Tree* bT)//é€’å½’å…ˆæ ¹éå† (ä¿®æ”¹ç‰ˆ) 
 {
 	if (bT != NULL)if (T != bT->L&&bT->name == '#')
 		cout << ',';
@@ -206,7 +193,7 @@ int main()
 {
 	char* C = input();
 	Tree** T = caozuo(C);
-	cout << "¹ãÒå±í:"; 
+	cout << "å¹¿ä¹‰è¡¨:"; 
 	guangyibiao(*T,NULL);
 	system("pause");
 }
